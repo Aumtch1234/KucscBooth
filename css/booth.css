@@ -1,0 +1,98 @@
+/* เพิ่มการจัดรูปแบบบูธ */
+.seat.status1{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.seat.status2{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    border: 2px solid #fbc02d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ffeb3b;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.seat.status3{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    border: 2px solid #388e3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.seat a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.seat:hover {
+    transform: scale(1.05);
+}
+
+.seat-container {
+    display: flex;
+    grid-template-columns: repeat(10, 80px);
+    /* 10 columns, each 80px wide */
+    gap: 10px;
+    justify-content: center;
+}
+
+.status {
+    display: flex;
+    gap: 20px;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    width: 18px;
+    height: 18px;
+}
+
+.status1 {
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+
+.status2 {
+    background-color: #ffeb3b;
+    border: 2px solid #fbc02d;
+}
+
+.status3 {
+    background-color: #4caf50;
+    border: 2px solid #388e3c;
+}
+
+.description {
+    font-size: 14px;
+}
